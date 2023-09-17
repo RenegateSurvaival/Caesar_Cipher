@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1792/1792193.png">
+	<title>Шифр Цезаря </title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Шифр Цезаря </h1>
+		<div class="panel">
+			<h3>Введите текст</h3>
+			<textarea class="big" type="text" id="text" spellcheck="false"></textarea>
+			<div>
+				<input id="cripto" type="radio" name="chek"><span name="chek">Зашифровать</span>
+				<input id="decripto" type="radio" name="chek"><span name="chek">Расшифровать</span>
+			</div>
+			<h3>Введите ключ</h3>
+			<input type="number" id="key" value="3">
+			<button id="go">Зашифровать/Расшифровать</button>
+			<h3>готовый текст</h3>
+			<textarea class="big" type="text" id="compdited-text" spellcheck="false"></textarea>
+		</div>
+	<script src="js/script.js" defer></script>
+</body>
+</html>
