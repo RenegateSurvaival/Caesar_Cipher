@@ -32,7 +32,7 @@ const text = document.querySelector('#text'),
 
 			
 			function mainCryption() {
-				if(key.value > 33){key.value = 33};
+				if(key.value > 31){key.value = 31};
 				if(key.value < 0){key.value = 0};
 				if(cripto.checked == true) {
 					caesarEncryptionRu((text.value).toLowerCase(), key.value);
