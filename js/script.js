@@ -27,11 +27,13 @@ const text = document.querySelector('#text'),
 			}
 			
 			function caesarDecryptionRu(message, shift) {
-				return caesarEncryptionRu(message, 33 - shift); // Для дешифрования используем обратный шаг сдвига
+				return caesarEncryptionRu(message, 33 - shift); 
 			}
 
 			
 			function mainCryption() {
+				if(key.value > 33){key.value = 33};
+				if(key.value < 0){key.value = 0};
 				if(cripto.checked == true) {
 					caesarEncryptionRu((text.value).toLowerCase(), key.value);
 				};
